@@ -17,7 +17,14 @@ getWeatherButton.addEventListener("click", async () => {
     const response = await fetch(apiUrl);
 
     if (!response.ok) {
-      throw new Error("City not found");
+      const errorData = await response.json();
+      if(errorData.message){
+        weatherResult.textcontent = `Error: ${errorData.message}`;
+      }
+      else{
+        weatherResult.textContent = "city not found. please check the city name.";
+      }
+      return;
     }
 
     const data = await response.json();
