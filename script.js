@@ -11,7 +11,7 @@ getWeatherButton.addEventListener("click", async () => {
     return;
   }
 
-  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  const apiUrl = `https://weather-backend.onrender.com/weather?city=${city}`;
 
   try {
     const response = await fetch(apiUrl);
