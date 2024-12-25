@@ -11,7 +11,7 @@ getWeatherButton.addEventListener("click", async () => {
     return;
   }
 
-  const apiUrl = `https://weather-backend.onrender.com/weather?city=${city}`;
+  const apiUrl = `https://weather-backend-bnuj.onrender.com/weather?city=${city}`;
 
   try {
     const response = await fetch(apiUrl);
