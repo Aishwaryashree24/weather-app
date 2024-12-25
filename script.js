@@ -1,4 +1,4 @@
-const apiKey = "0e30f7cfa72aef3d4214d2be5951e4ef";
+const apiKey = "";//replace with your api key
 const weatherResult = document.getElementById("weatherResult");
 const getWeatherButton = document.getElementById("getWeather");
 const refreshPageButton = document.getElementById("refreshPage");
